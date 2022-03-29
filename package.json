@@ -1,0 +1,42 @@
+{
+  "name": "bowling-game-kata",
+  "version": "1.0.0",
+  "description": "TDD with Javascript Bowling Game Kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest -- watch"
+  },
+  "keywords": [],
+  "author": "IWC",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.14.0",
+    "eslint": "^7.28.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "jest": "^27.0.4"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "jest"
+    ],
+    "env": {
+      "es6": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
+  },
+  "prettier": {
+    "semi": false
+  }
+}
