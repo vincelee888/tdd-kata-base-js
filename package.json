@@ -1,7 +1,7 @@
 {
-  "name": "bowling-game-kata",
+  "name": "tdd-kata-base",
   "version": "1.0.0",
-  "description": "TDD with Javascript Bowling Game Kata",
+  "description": "TDD kata base project",
   "main": "index.js",
   "scripts": {
     "test": "jest",
