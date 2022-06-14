@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  devcontainer:
+    image: learn/js-tdd-base-container:0.1
+    build: .
+    container_name: js-tdd-base-container
+    hostname: js-tdd-base.local
+    working_dir: /src
+    volumes:
+       - ..:/src
+       # Allow AWS CLI and other tools to read an AWS profile
+       - ~/.aws:/home/node/.aws
+    command: sleep infinity
