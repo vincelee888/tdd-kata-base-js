@@ -1,4 +1,7 @@
+import { getNeighbours } from './board'
+
 export const evolve = (state) => {
+    console.log(getNeighbours())
     const nextGen = []
     for(let y = 0; y < state.length; y++) {
         nextGen.push([])
