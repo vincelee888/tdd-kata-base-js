@@ -2,7 +2,7 @@ import { evolve } from "./app"
 
 describe('game of life', () => {
     describe('forever alone', () => {
-        test('cells with no neighbours die', () => {
+        test('dead cells stay dead', () => {
             const current = [
                 [false]
             ]
@@ -24,14 +24,14 @@ describe('game of life', () => {
     //         expect(evolve(current)).toEqual(expected)
     //     })
 
-    //     test('cells with 2 neighbours to survive', () => {
-    //         const current = [
-    //             [true, true, true]
-    //         ]
-    //         const expected = [
-    //             [false, true, false]
-    //         ]
-    //         expect(evolve(current)).toEqual(expected)
-    //     })
+        // test('cells with 2 neighbours to survive', () => {
+        //     const current = [
+        //         [true, true, true]
+        //     ]
+        //     const expected = [
+        //         [false, true, false]
+        //     ]
+        //     expect(evolve(current)).toEqual(expected)
+        // })
     // })
 })
